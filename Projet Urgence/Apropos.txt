@@ -1,0 +1,27 @@
+                             
+
+							1. Présentation de l'application
+
+Emergency application de gestion des urgences hospitalières a été conçue pour aider les équipes médicales à gérer efficacement les situations d'urgence dans un environnement hospitalier. Son utilité est de faciliter la gestion des urgences ainsi que la communication interne entre les differents services médicaux. Les objectifs de l'application sont d'améliorer la prise en charge des patients, d'optimiser l'utilisation des ressources hospitalières et de réduire les délais d'attente. Les avantages pour les utilisateurs incluent une meilleure coordination des soins, une réduction des erreurs médicales et une optimisation du temps et des ressources.
+
+							
+							2. Fonctionnalités principales
+
+Les fonctionnalités principales de l'application comprennent le signalement d'une urgence au sein de la structure, la consultation du programme de son service par un personnel appartenant a ce service, la consultation des informations publiées par les differents services ainsi que la communication interne entre les différents services.
+
+							3. Utilisateurs cibles
+
+Les utilisateurs cibles de l'application sont principalement les centres hospitaliers et tout service impliqué dans la gestion des urgences hospitalières. L'application répond aux besoins spécifiques de chaque profil d'utilisateur en proposant des fonctionnalités adaptées à leurs tâches et responsabilités respectives.
+
+							4. Technologies utilisées
+
+L'application a été développée en utilisant principalement le langage de programmation C# pour sa robustesse et sa flexibilité, ainsi que SQL pour la gestion de bases de données. Ces choix technologiques ont un impact positif sur la performance et la fiabilité de l'application, en permettant une gestion efficace des données et une interface utilisateur fluide.
+
+							5. Concepteurs de l'application
+
+•	Bonsou Dimitri
+•	Tipma Nick Loic
+•	Mekem Dirane
+•	Moko yvan
+•	Kenne Honore
+•	Makemte Estina

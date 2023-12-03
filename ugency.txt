@@ -1,0 +1,37 @@
+                                                 
+                                            Menu aide
+
+
+                                					 I.	Créer compte
+
+Dans notre application urgency il existe plusieurs types d’utilisateur notamment
+•	Les utilisateur (c’est ceux qui utilise l’application et qui signale des problèmes d’ordre sanitaire) il ne peuvent qu’utiliser l’application ils ne peuvent ni ajouter ni supprimer un service 
+•	Les service (il sont charge de résoudre les problèmes déclarer par les utilisateurs)
+•	Le super administrateur (il est charges de veuillez au bon fonctionnement de l’application d’ajouter de supprimer de modifier les diffèrent service)
+  
+                               		 		    II.	Connexion
+
+Plusieur personne peut se connecter à notre application pour l’utiliser c’est la raison pour laquelle nous avons créé trois formulaires de connexion pour les trois types d’utilisateur. C’est formulaire de connexion fonctionne comme suit :
+•	Connexion admin qui permet à l’utilisateur de se connecter à l’application et à la base de donnes de urgency. Pour sa connexion d’un administrateur a la base de donner il suffit de remplir son nom d’utilisateur et son mot de passe et d’appuyer sur login  
+•	Connection personnel qui permet à un personnel de se connecter à l’application et de déclarer les diffèrent problèmes. Pour la connections d’un personnel il suffit l’user Name et le password et d’appuis sur login
+•	Connection service qui permet de se connecter à l’application ainsi qu’au diffèrent service de l’application. Pour se connecter à la base de donner du service il suffit remplir son nom et son mot de passe puis cliquer sur login et on sera connecter à la base de donner
+•	
+                                          	    III. Créer des comptes
+
+Il est possible de créer un compte pour un personnel grâce au formulaire créer compte pour cela on doit remplir le formulaire et appuyer sur le bouton enregistrer et le compte sera créer
+
+                                                 IV. Modification des informations
+
+Pour modifier les informations dans notre base il préalablement sectionner la ligne qu’on souhaite modifier ou supprimer, seul le super administrateur peut supprimer les information un service et les informations dans la base de donner
+                 
+                                                 V. Naviguer à travers les formulaires
+
+Dans notre application il est possible de naviguer à travers les formulaires c’est-à-dire qui quitter un formulaire a un autre pour cela il suffit de double cliquer sur le lien portant le nom du formulaire au quel vous souhaiter accéder.
+                                             
+                                                 VI. Suppression d’un compte et d’un service
+
+Pour la suppression d’un compte il suffit d’appuis sur le bouton supprimer et le compte sera définitivement supprimer
+Pour la surpression d’un service il également appuyer sur le bouton supprimer mais seul le super administrateur peut le faire car c’est lui qui possède tous les droits sur l’application
+Dans notre application urgency il est possible de déclarer ou de signaler des problèmes d’ordre sanitaire et nous vous enverrons des équipes compétentes pour gérer votre problème en temps réel
+
+

@@ -1,0 +1,4 @@
+D:\Csharp avance\Multicouche TI-PAM2\Projet Urgence\BLL\bin\Debug\BLL.dll
+D:\Csharp avance\Multicouche TI-PAM2\Projet Urgence\BLL\bin\Debug\BLL.pdb
+D:\Csharp avance\Multicouche TI-PAM2\Projet Urgence\BLL\obj\Debug\BLL.dll
+D:\Csharp avance\Multicouche TI-PAM2\Projet Urgence\BLL\obj\Debug\BLL.pdb

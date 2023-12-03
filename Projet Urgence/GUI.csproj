@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{98444151-5397-4A22-AF52-97CBF1D2F8FE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>Projet Urgence</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\dimit\Desktop\Projet Urgence\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Urgency</ProductName>
+    <PublisherName>Bonsou kengni dimitri</PublisherName>
+    <SuiteName>application de gestion des urgences</SuiteName>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>BC2B51DC9885E007F0BBAF43BCD2353DCB9C11E7</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>GUI_CléTemporaire.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FontAwesome.Sharp">
+      <HintPath>..\..\..\..\FontAwesome.Sharp.4.6.1\lib\net40\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\projet  5point\PRISON\packages\Guna.UI2.WinForms.2.0.4.4\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcceuilAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcceuilAdmin.Designer.cs">
+      <DependentUpon>AcceuilAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AcceuilPersonnel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcceuilPersonnel.Designer.cs">
+      <DependentUpon>AcceuilPersonnel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AcceuilService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcceuilService.Designer.cs">
+      <DependentUpon>AcceuilService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aide.Designer.cs">
+      <DependentUpon>Aide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apropos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apropos.Designer.cs">
+      <DependentUpon>Apropos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chargement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chargement.Designer.cs">
+      <DependentUpon>Chargement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Datas\DsPerso.cs">
+      <DependentUpon>DsPerso.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Datas\DsPerso.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsPerso.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormConnexionService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConnexionService.Designer.cs">
+      <DependentUpon>FormConnexionService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConnexionAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConnexionAdmin.Designer.cs">
+      <DependentUpon>FormConnexionAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConnexionPersonnel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConnexionPersonnel.Designer.cs">
+      <DependentUpon>FormConnexionPersonnel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information.Designer.cs">
+      <DependentUpon>Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface Personnel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface Personnel.Designer.cs">
+      <DependentUpon>Interface Personnel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FromCreerCompte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FromCreerCompte.Designer.cs">
+      <DependentUpon>FromCreerCompte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface Admin.Designer.cs">
+      <DependentUpon>Interface Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface Service.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface Service.Designer.cs">
+      <DependentUpon>Interface Service.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personnel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personnel.Designer.cs">
+      <DependentUpon>Personnel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonnelService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonnelService.Designer.cs">
+      <DependentUpon>PersonnelService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Planification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planification.Designer.cs">
+      <DependentUpon>Planification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Probleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Probleme.Designer.cs">
+      <DependentUpon>Probleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Publication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Publication.Designer.cs">
+      <DependentUpon>Publication.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\RapportAlerte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\RapportAlerte.Designer.cs">
+      <DependentUpon>RapportAlerte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\RapportPersonnels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\RapportPersonnels.Designer.cs">
+      <DependentUpon>RapportPersonnels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\RapportServices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\RapportServices.Designer.cs">
+      <DependentUpon>RapportServices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\AlerteReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AlerteReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\PersonnelReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PersonnelReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ServiceReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ServiceReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Service.Designer.cs">
+      <DependentUpon>Service.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AcceuilAdmin.resx">
+      <DependentUpon>AcceuilAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcceuilPersonnel.resx">
+      <DependentUpon>AcceuilPersonnel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AcceuilService.resx">
+      <DependentUpon>AcceuilService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aide.resx">
+      <DependentUpon>Aide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apropos.resx">
+      <DependentUpon>Apropos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chargement.resx">
+      <DependentUpon>Chargement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConnexionService.resx">
+      <DependentUpon>FormConnexionService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConnexionAdmin.resx">
+      <DependentUpon>FormConnexionAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConnexionPersonnel.resx">
+      <DependentUpon>FormConnexionPersonnel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information.resx">
+      <DependentUpon>Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface Personnel.de-DE.resx">
+      <DependentUpon>Interface Personnel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface Personnel.resx">
+      <DependentUpon>Interface Personnel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FromCreerCompte.resx">
+      <DependentUpon>FromCreerCompte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface Admin.resx">
+      <DependentUpon>Interface Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface Service.resx">
+      <DependentUpon>Interface Service.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personnel.resx">
+      <DependentUpon>Personnel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonnelService.resx">
+      <DependentUpon>PersonnelService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planification.resx">
+      <DependentUpon>Planification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Probleme.resx">
+      <DependentUpon>Probleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Publication.resx">
+      <DependentUpon>Publication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\RapportAlerte.resx">
+      <DependentUpon>RapportAlerte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\RapportPersonnels.resx">
+      <DependentUpon>RapportPersonnels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\RapportServices.resx">
+      <DependentUpon>RapportServices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\AlerteReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AlerteReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\PersonnelReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PersonnelReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ServiceReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ServiceReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Service.resx">
+      <DependentUpon>Service.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Datas\DsPerso.xsc">
+      <DependentUpon>DsPerso.xsd</DependentUpon>
+    </None>
+    <None Include="Datas\DsPerso.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsPerso.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datas\DsPerso.xss">
+      <DependentUpon>DsPerso.xsd</DependentUpon>
+    </None>
+    <None Include="GUI_CléTemporaire.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{58733dba-7d0d-4baf-b377-cea29b9a3dca}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{880c22a3-c53f-4713-9ef3-cceb82d013db}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\josh-hild-IHVAPX-XahQ-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5217118-nouveau-vecteur-de-conception-d-icone-d-urgence-gratuit-vectoriel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alerte-info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\urgence.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo-Pharmacie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-rdne-stock-project-6129881.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\téléchargement %2871%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
